@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Top Universities</title>
+    <link rel="stylesheet" href="topuniversity-style.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!----navbar------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+    <!--forms------>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---validation of course---->
+    <script type="text/javascript">
+      function check(){
+        var res1 = document.getElementById('confirmcourse').value;
+        var res = res1.toLowerCase();
+        if((res != "engineering") && (res != "medicine") && (res != "Engineering") && (res != "Medicine") && (res != "Law") && (res != "law") && (res != "Fashion Designing") && (res != "fashion designing") && (res != "Aviation and Aeronautics") && (res != "aviation and aeronautics") && (res != "Journalism") && (res != "journalism")){
+          document.getElementById("message1").innerHTML = "<b>Invalid</b>";
+          document.getElementById("message1").style.color = "red";
+        }
+        else{
+          document.getElementById("message1").innerHTML = " <b>Valid</b>";
+          document.getElementById("message1").style.color = "green";
+        }
+      }
+      function college(){
+          var course = document.getElementById('confirmcourse').value;
+          if(course == 'Engineering'){
+            location.href = "eng.php";
+          }
+          else if (course == 'Medicine') {
+            location.href = "med.php";
+          }
+          else if(course == 'Law'){
+            location.href = "law.php";
+          }
+          else if(course == 'Journalism'){
+            location.href = "journal.php";
+          }
+          else if(course == 'Fashion Designing'){
+            location.href = "fashion.php";
+          }
+          else if(course == 'Aviation and Aeronautics'){
+            location.href = "aviation.php";
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <!---header--->
+    <div class="header">
+      <img src="img/logo.png" alt="" height="100" width="550" align="center">
+    </div>
+    <!---navbar----->
+    <div id="menu-nav">
+    <div id="navigation-bar">
+      <ul>
+        <li><a href="home.html"><i class="fa fa-home"></i><span> Home</span></a></li>
+        <li><a href="aboutus.html"><i class="fa fa-handshake"></i><span> About Us</span></a></li>
+        <li><a href="login.php"><i class="fa fa-user"></i><span> Login</span></a></li>
+        <li><a href="review.html"><i class="fa fa-comment"></i><span> Post Reviews</span></a></li>
+        <li><a href="stickynotes/dashboard.php"><i class="fa fa-list-ol"></i> <span> Prioritize</span></a></li>
+        <li style="font-weight: bold; font-style: italic;"><a href="#"><i class="fa fa-graduation-cap"></i> <span> Top Universities</span></a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="form-style-5" style="margin-top: 30px; margin-left:450px;">
+      <form style="padding-top: 20px;">
+      <fieldset>
+      <legend><span class="number">1</span> Candidate Info</legend>
+      <input type="text" name="field1" placeholder="Name" required>
+      <input type="email" name="field2" placeholder="Email" required>
+      <input type="number" name="field2" placeholder="Age" min="16" required>
+      <div class="btn-group" style="width:100%">
+        <label for="">Gender:</label>
+        <div class="btn-group" role="group" aria-label="Basic example">
+           <button type="button" class="btn btn-secondary btn-primary">Male</button>
+           <button type="button" class="btn btn-secondary btn-danger">Female</button>
+           <button type="button" class="btn btn-secondary btn-warning">Other</button>
+        </div>
+      </div>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+      <legend><span class="number">2</span>Course Info</legend>
+      <label for="course"></label>
+      <select id="course" name="field4">
+      <optgroup >
+        <option value="">Engineering</option>
+      </optgroup>
+      <optgroup>
+       <option value="">Medicine</option>
+      </optgroup>
+     <optgroup>
+        <option value="">Law</option>
+     </optgroup>
+     <optgroup>
+       <option value="">Aviation and Aeronautics</option>
+     </optgroup>
+     <optgroup>
+       <option value="">Journalism</option>
+     </optgroup>
+     <optgroup>
+       <option value="">Fashion Designing</option>
+     </optgroup>
+     </select>
+     <label for="confirmcourse">Confirm the course chosen</label><span style="font-size:15px;"id="message1"></span>
+     <input type="text" name="confirmcourse" id="confirmcourse" placeholder="Enter course name" onblur="check();">
+     </fieldset>
+     <input type="button" name="button" id="myButton" value="Apply" onclick="college();">
+
+     </form>
+    </div>
+    <!----footer---->
+    <div class="footer">
+       <p style="text-align: left; margin-top: 13px;"> &nbsp &nbsp &copy IWP J component <span class="tab"> Made with <i style="color: red;" class="fa fa-heart fa-1x fa-beat" aria-hidden="true"></i> <b>EduNation</b></span></p>
+    </div>
+  </body>
+</html>

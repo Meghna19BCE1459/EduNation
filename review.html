@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews and Comments</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="user-style.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper shadow" style="margin-top: 120px; margin-left: 800px;">
+        <h2 style="font-size: 60px">Reviews</h2>
+        <p>Drop in your reviews and comments about any resource.</p>
+        <form class="forms" method="post" action="rating.html">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" value="">
+                <span class="help-block"></span>
+            </div>
+            <div class="form-group">
+              <label>Entertainment Category</label>
+              <br>
+              <select class="" name="categories" style="width:310px; height: 35px;color:black;">
+                <option value="">Engineering</option>
+                <option value="">Medicine</option>
+                <option value="">Law</option>
+                <option value="">Aviation and Aeronautics</option>
+                <option value="">Journalism</option>
+                <option value="">Fashion Studies</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>University Name</label>
+              <br>
+              <input type="text" name="" value="" class="form-control" >
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Next">
+                <input  type="reset" class="btn btn-default" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

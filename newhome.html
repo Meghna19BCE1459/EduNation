@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="home-style.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--cookie message----->
+    <!----modal---->
+    <!----navbar------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+  </head>
+  <body>
+    <!---header--->
+    <div class="header">
+      <img src="img/logo.png" alt="" height="100" width="550" align="center">
+    </div>
+    <!---navbar----->
+    <div id="menu-nav">
+    <div id="navigation-bar" style="te">
+      <ul>
+        <li style="font-weight: bold; font-style: italic;"><a href="#"><i class="fa fa-home"></i><span> Home</span></a></li>
+        <li><a href="aboutus.html"><i class="fa fa-handshake"></i><span> About Us</span></a></li>
+        <li><a href="logout.php"><i class="fa fa-user"></i><span> Logout</span></a></li>
+        <li><a href="review.html"><i class="fa fa-comment"></i><span> Post Reviews</span></a></li>
+  	    <li><a href="stickynotes/dashboard.php"><i class="fa fa-list-ol"></i> <span> Prioritize</span></a></li>
+        <li><a href="topuniversity.html"><i class="fa fa-graduation-cap"></i> <span> Top Universities</span></a></li>
+      </ul>
+    </div>
+
+    </div>
+    <!---cookie message--->
+    <!--news bulletin--->
+    <div class="row">
+      <div class="col1">
+       <p style="font-size: 25px; font-style: bolder; text-align: center;" >News Bulletin</p>
+       <a href="https://www.ndtv.com/world-news/us-government-rescinds-order-denying-visas-to-foreign-students-2262866">US Revokes Student Visa Rule</a>
+       <br>
+       <br>
+       <a href="https://economictimes.indiatimes.com/industry/services/education/iit-guwahati-launches-four-new-academic-programmes/articleshow/70841731.cms">IIT Guwahati launches academic <br> programmes </a>
+       <br>
+       <br>
+       <a href="https://economictimes.indiatimes.com/news/science/see-the-best-of-artificial-intelligence-5d-tech-and-more-from-iit-d/articleshow/63742870.cms">5D Tech and AI from IIT-D</a>
+       <br>
+       <br>
+       <a href="https://timesofindia.indiatimes.com/home/education/news/national-education-policy-2020-all-you-need-to-know/articleshow/77239854.cms">National Education Policy - 2020</a>
+       <br>
+       <br>
+       <a href="https://www.topuniversities.com/student-info/university-news/77-international-students-willing-quarantine">77% of International Students <br>willing to quarantine</a>
+       <br>
+       <br>
+       <a href="https://www.timesnownews.com/education/article/university-final-year-exams-not-yet-cancelled-sc-adjourns-hearing-till-aug-10-asks-to-submit-mhas-stand/629975">UGC: Cancelling Final Year exams <br> 2020</a>
+       <br>
+       <br>
+       <a href="https://www.ndtv.com/education/nirf-rankings-2020-be-announced-tomorrow">2020 NIRF Rankings</a>
+       <br>
+       <br>
+       <a href="https://www.ndtv.com/india-news/qs-rankings-iit-bombay-climbs-17-places-among-top-200-universities-in-the-world-1863753">IIT-B among top 200 <br>universities in the world </a>
+      </div>
+      <div class="col2" >
+        <div class="slideshow-container">
+           <div class="mySlides fade">
+             <img src="img/iit.jpeg" style="width:100%" height="500">
+             <div class="text">Indian Institute of Technology, Delhi</div>
+           </div>
+
+           <div class="mySlides fade">
+             <img src="img/mit.jpg" style="width:100%" height="500">
+             <div class="text">Massachussets Institute of Technology</div>
+           </div>
+           <div class="mySlides fade">
+             <img src="img/princeton.jpg" style="width:100%" height="500">
+              <div class="text">Princeton University</div>
+           </div>
+           <div class="mySlides fade">
+             <img src="img/yale.jpg" style="width:100%" height="500">
+              <div class="text">Yale University</div>
+           </div>
+           <div class="mySlides fade">
+             <img src="img/aiims.jpg" style="width:100%" height="500">
+              <div class="text">All India Institute of Medical Science</div>
+           </div>
+           <div class="mySlides fade">
+             <img src="img/stanfordmedical.jpg" style="width:100%" height="500">
+              <div class="text">Stanford Medical College</div>
+           </div>
+           <div class="mySlides fade">
+             <img src="img/jipmer.jpeg" style="width:100%" height="500">
+              <div class="text">Jawaharlal Institute of Postgraduate Medical Education and Research</div>
+           </div>
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+      </div>
+    </div>
+    <div class="row" style="text-align: center;" style="background-color: #474e5d;">
+      <h1 style="font-size: 40px;"><b>Education in the current world</b></h1>
+      <div class="card">
+        <div class="container1">
+           <p>Education gives us a knowledge of the world around us and changes it into something better. It develops in us a perspective of looking at life. It helps us build opinions and have points of view on things in life. People debate over the subject of whether education is the only thing that gives knowledge. Some say education is the process of gaining information about the surrounding world while knowledge is something very different.  Education makes us capable of interpreting things, among other things. It is not just about lessons in textbooks. It is about the lessons of life.Education provides stability in life, and it’s something that no one can ever take away from you. By being well-educated and holding a college degree, you increase your chances for better career opportunities and open up new doors for yourself. </p>
+           <br>
+           <p>Education helps in removing poverty as if a person is educated, he can get a good job and fulfill all the basic needs & requirement of his family. Education also helps in empowering women. Certain old customs like Not Remarrying Widows, Sati Pratha, Child Marriage, Dowry System etc. can be demolished with the power of education. Women, if educated, can raise voice against the injustice done to her. This will bring a lot of development in society as well as in the nation. In short, Right to Freedom of speech & expression can be used in the right way if all women will become educated.</p>
+           <blockquote><p class="quotation">
+             Education is the most powerful weapon you can use to change the world.</p>
+             <footer>— Nelson Mandela</footer>
+           </blockquote>
+        </div>
+       </div>
+    </div>
+    <!----footer---->
+    <div class="footer">
+       <p style="text-align: left;"> &nbsp &nbsp &copy IWP J component <span class="tab"> Made with <i style="color: red;" class="fa fa-heart fa-1x fa-beat" aria-hidden="true"></i> <b>EduNation</b></span></p>
+    </div>
+  </body>
+</html>
